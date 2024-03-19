@@ -1,9 +1,8 @@
 package com.cyberenjeru.controledeponto.model;
 
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.EmbeddedId;
 import lombok.*;
-
-import javax.persistence.Embeddable;
-import javax.persistence.EmbeddedId;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
