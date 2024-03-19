@@ -1,6 +1,7 @@
 package com.cyberenjeru.controledeponto.model;
 
 
+import jakarta.persistence.ManyToOne;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -14,10 +15,14 @@ import java.time.LocalDateTime;
 @Builder
 public class User {
     private Long id;
+    @ManyToOne
     private UserCategory userCategory;
     private String name;
+    @ManyToOne
     private Company company;
+    @ManyToOne
     private AcessLevel acessLevel;
+    @ManyToOne
     private WorkingDay workingDay;
     private BigDecimal tolerance;
     private LocalDateTime startJourney;
