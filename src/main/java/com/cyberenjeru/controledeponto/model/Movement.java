@@ -6,6 +6,8 @@ import javax.persistence.Embeddable;
 import javax.persistence.EmbeddedId;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -25,4 +27,9 @@ public class Movement {
     }
     @EmbeddedId
     private MovementId id;
+    private LocalDateTime entryDate;
+    private LocalDateTime leaveDate;
+    private BigDecimal period;
+    private Occurrence occurrence;
+    private Calendar calendar;
 }
