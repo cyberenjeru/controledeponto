@@ -2,6 +2,7 @@ package com.cyberenjeru.controledeponto.model;
 
 import lombok.*;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Getter
@@ -14,4 +15,5 @@ public class Calendar {
     private Long id;
     private DateType dateType;
     private String description;
+    private LocalDateTime specialDate;
 }
