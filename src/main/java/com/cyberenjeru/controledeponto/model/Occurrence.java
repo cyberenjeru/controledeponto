@@ -10,5 +10,7 @@ import lombok.*;
 @EqualsAndHashCode
 @Builder
 public class Occurrence {
-
+    private Long id;
+    private String name;
+    private String description;
 }
