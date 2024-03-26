@@ -2,6 +2,7 @@ package com.cyberenjeru.controledeponto.model;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
 import lombok.*;
 
 import java.io.Serializable;
@@ -14,6 +15,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class AnnualLeave {
     @AllArgsConstructor
     @NoArgsConstructor

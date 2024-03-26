@@ -1,6 +1,9 @@
 package com.cyberenjeru.controledeponto.model;
 
 
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import lombok.*;
 
@@ -13,7 +16,9 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+
 public class User {
+
     private Long id;
     @ManyToOne
     private UserCategory userCategory;
