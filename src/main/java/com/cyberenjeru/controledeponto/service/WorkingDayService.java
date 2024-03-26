@@ -13,7 +13,7 @@ public class WorkingDayService {
     public WorkingDayService(WorkingDayRepository workingDayRepository){
         this.workingDayRepository = workingDayRepository;
     }
-    public WorkingDay save(WorkingDay workingDay){
+    public WorkingDay saveWorkingDay(WorkingDay workingDay){
         return workingDayRepository.save(workingDay);
     }
 }
